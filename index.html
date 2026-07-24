@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>♡ Mochi Calc ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="sky">
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+  </div>
+
+  <main class="calc" id="calc">
+
+    <div class="mascot-wrap">
+      <div class="mascot" id="mascot">
+        <div class="ear ear-l"></div>
+        <div class="ear ear-r"></div>
+        <div class="face">
+          <div class="blush blush-l"></div>
+          <div class="blush blush-r"></div>
+          <div class="eye eye-l" id="eyeL"></div>
+          <div class="eye eye-r" id="eyeR"></div>
+          <div class="mouth" id="mouth"></div>
+        </div>
+      </div>
+      <div class="speech-bubble" id="speech">hii! ✨</div>
+    </div>
+
+    <section class="screen">
+      <div class="expression" id="expression">&nbsp;</div>
+      <div class="result" id="result">0</div>
+    </section>
+
+    <section class="pad">
+      <button class="key key-fn" data-action="clear">AC</button>
+      <button class="key key-fn" data-action="backspace">⌫</button>
+      <button class="key key-fn" data-action="percent">%</button>
+      <button class="key key-op" data-op="÷">÷</button>
+
+      <button class="key key-num" data-num="7">7</button>
+      <button class="key key-num" data-num="8">8</button>
+      <button class="key key-num" data-num="9">9</button>
+      <button class="key key-op" data-op="×">×</button>
+
+      <button class="key key-num" data-num="4">4</button>
+      <button class="key key-num" data-num="5">5</button>
+      <button class="key key-num" data-num="6">6</button>
+      <button class="key key-op" data-op="−">−</button>
+
+      <button class="key key-num" data-num="1">1</button>
+      <button class="key key-num" data-num="2">2</button>
+      <button class="key key-num" data-num="3">3</button>
+      <button class="key key-op" data-op="+">+</button>
+
+      <button class="key key-num key-zero" data-num="0">0</button>
+      <button class="key key-num" data-num=".">.</button>
+      <button class="key key-eq" data-action="equals">=</button>
+    </section>
+
+  </main>
+
+  <div class="particles" id="particles"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
